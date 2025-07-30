@@ -3,24 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Simple Website with Facebook Login</title>
+  <title>Simple Website with Facebook Login</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to My Simple Website</h1>
+    <h1>Welcome to Mega College Website</h1>
   </header>
 
   <main>
-    <p>Welcome to the official demo website of College.</p>
-    
+    <p>A starter website with HTML, CSS, and JS.</p>
+
     <button id="clickBtn">Click me!</button>
     <p id="message"></p>
 
     <hr />
 
     <button id="fbLoginBtn" class="facebook-btn">Login with Facebook</button>
-    <p id="fbMessage"></p>
+
+    <!-- Hidden login form -->
+    <div id="loginForm" class="login-form hidden">
+      <h2>Facebook Login</h2>
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" /><br /><br />
+
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" /><br /><br />
+
+      <button id="submitLogin">Login</button>
+      <button id="cancelLogin" class="cancel-btn">Cancel</button>
+
+      <p id="loginMessage"></p>
+    </div>
   </main>
 
   <script src="script.js"></script>

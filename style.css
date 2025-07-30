@@ -35,13 +35,43 @@ button:hover {
   justify-content: center;
 }
 
+/* Facebook button hover */
 .facebook-btn:hover {
   background-color: #145dbf;
 }
 
-/* Facebook icon style (using Unicode) */
-.facebook-btn::before {
-  content: "\f09a"; /* Facebook icon code in some fonts (not always supported) */
-  font-family: Arial, sans-serif;
-  margin-right: 8px;
+/* Login form styles */
+.login-form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #1877f2;
+  border-radius: 8px;
+  width: 300px;
+  background-color: white;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  margin-left: 10px;
+  color: black;
+}
+
+.cancel-btn:hover {
+  background-color: #aaa;
 }
